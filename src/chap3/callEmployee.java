@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package chap3;
-
-/**
- *
- * @author papercut
- */
 public class callEmployee {
+    public static void main(String[] args) {
+        //call static attr & metod
+        System.out.println("ID : "+Employee.id);
+        Employee.work();
+        
+                                
+        //call non-static
+        Employee em = new Employee();
+        System.out.println("Name : "+em.name);
+        System.out.println("Age : "+em.age);
+        em.getSalary();
+    }
     
 }
